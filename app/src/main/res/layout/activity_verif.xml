@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.VerifActivity">
+
+
+    <Button
+        android:layout_width="24dp"
+        android:layout_height="24sp"
+        android:background="@drawable/abc_vector_test"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="20dp"
+        android:id="@+id/btBack"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter the 6-digit code sent to"
+        android:textColor="@color/black"
+        android:fontFamily="@font/sanomat"
+        android:textSize="14sp"
+        android:id="@+id/tvEnter"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintTop_toBottomOf="@id/btBack"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+62823123456789"
+        android:fontFamily="@font/robotomed"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/tvEnter"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/tvNomor"/>
+
+    <EditText
+        android:id="@+id/etCode"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:paddingStart="10dp"
+        android:fontFamily="@font/robotomed"
+        android:background="@null"
+        android:hint="000000"
+        android:maxLength="6"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/tvNomor"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Didn't receive it"
+        android:textColor="@color/black"
+        android:fontFamily="@font/sanomat"
+        android:textSize="14sp"
+        android:id="@+id/tvReceive"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toTopOf="@id/tvTime"/>
+
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Request a new code in 00.30"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/sanomat"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

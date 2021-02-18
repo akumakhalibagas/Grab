@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_navigation"
+    app:startDestination="@id/nav_home">
+
+    <fragment android:id="@+id/nav_home"
+        android:name="com.makhalibagas.grab.ui.fragment.home.HomeFragment"
+        tools:layout="@layout/fragment_home"
+        android:label="Fragment Home"/>
+    <fragment android:id="@+id/nav_activity"
+        android:name="com.makhalibagas.grab.ui.fragment.activity.ActivityFragment"
+        tools:layout="@layout/fragment_activity"
+        android:label="Fragment Activity"/>
+    <fragment android:id="@+id/nav_payment"
+        android:name="com.makhalibagas.grab.ui.fragment.payment.PaymentFragment"
+        tools:layout="@layout/fragment_payment"
+        android:label="Fragment Payment"/>
+    <fragment android:id="@+id/nav_message"
+        android:name="com.makhalibagas.grab.ui.fragment.message.MessageFragment"
+        tools:layout="@layout/fragment_message"
+        android:label="Fragment Message"/>
+    <fragment android:id="@+id/nav_account"
+        android:name="com.makhalibagas.grab.ui.fragment.account.AccountFragment"
+        tools:layout="@layout/fragment_account"
+        android:label="Fragment Account"/>
+
+</navigation>

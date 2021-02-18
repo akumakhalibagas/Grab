@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.fragment.activity.DeliveryFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ongoing"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/item_ongoing"
+        tools:itemCount="4"
+        android:layout_marginTop="20dp"
+        android:id="@+id/rv_ongoing"/>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:textSize="18sp"
+        android:text="Post"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:drawableEnd="@drawable/ic_barrowdown"
+        android:fontFamily="@font/sanomat"/>
+
+</LinearLayout>

@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#F8F9FB"
+    tools:context=".ui.fragment.payment.PaymentFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        app:contentInsetStart="0dp"
+        app:contentInsetLeft="0dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Payment"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/sanomat"/>
+
+    </androidx.appcompat.widget.Toolbar>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="60dp">
+
+            <ImageView
+                android:id="@+id/iv"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:src="@drawable/ic_bggradient"
+                android:scaleType="fitXY"/>
+
+            <TextView
+                android:id="@+id/tvOvo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OVO Cash"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/iv"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/purple_200"
+                android:fontFamily="@font/sanomat"/>
+
+            <LinearLayout
+                android:id="@+id/linearRp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/tvOvo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:id="@+id/tvMatauang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sanomat"
+                    android:text="IDR"
+                    android:textColor="@color/gray"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tvRp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/robotobold"
+                    android:text="999.999.990"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/black"
+                    android:textSize="32dp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvPoint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/point"
+                android:gravity="center"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/linearRp"
+                android:textSize="13sp"
+                android:fontFamily="@font/sanomat"
+                android:textColor="#0E0E0E"
+                android:drawablePadding="6dp"
+                android:layout_marginTop="20dp"
+                app:drawableStartCompat="@drawable/point_svg"
+                app:drawableEndCompat="@drawable/ic_arrow" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/shadowMenu"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="@color/white"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                app:cardElevation="1dp"
+                app:cardCornerRadius="8dp"
+                android:layout_marginTop="15dp"
+                app:layout_constraintTop_toBottomOf="@id/tvPoint">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/pay"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pay"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/sanomat"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/topu"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Top Up"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/sanomat"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/tvSubs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Subscriptions"
+                android:fontFamily="@font/sanomat"
+                app:layout_constraintTop_toBottomOf="@id/shadowMenu"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="25dp"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/shadowMenu2"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:background="@color/white"
+                android:layout_margin="15dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="1dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvSubs">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/ivic"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:src="@drawable/subsc"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        app:layout_constraintStart_toEndOf="@+id/ivic"
+                        android:textColor="@color/black"
+                        android:lineSpacingExtra="3dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginStart="15dp"
+                        android:text="Choose a subscription plan to save on \nrides, food, shopping, and more!"/>
+
+                    <View
+                        android:id="@+id/view"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/gray_card"
+                        app:layout_constraintTop_toBottomOf="@id/ivic"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="15dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/robotobold"
+                        android:text="View Plans"
+                        android:textColor="@color/blue"
+                        android:textSize="16sp"
+                        android:layout_marginTop="10dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/view"/>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/tvRecent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recent Activity"
+                android:fontFamily="@font/sanomat"
+                app:layout_constraintTop_toBottomOf="@id/shadowMenu2"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="25dp"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="8dp"
+                android:layout_margin="15dp"
+                app:cardElevation="1dp"
+                app:layout_constraintTop_toBottomOf="@id/tvRecent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:cardBackgroundColor="@color/white">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:listitem="@layout/item_recent"
+                    tools:itemCount="3"
+                    android:id="@+id/rvRecent"/>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                app:layout_constraintTop_toBottomOf="@id/cv"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="10dp"
+                android:text="To unlik OVO from your Grab app, you can do it here"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

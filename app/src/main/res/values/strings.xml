@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Grab</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="point">999.991 Points</string>
+    <string name="money">Rp9.999.999.999.990</string>
+    <string name="top_up">Top Up</string>
+    <string name="wallet">Wallet</string>
+    <string name="food">Food</string>
+    <string name="mart">Mart</string>
+    <string name="express">Express</string>
+    <string name="pulsa">Pulsa/Token</string>
+    <string name="car">Car</string>
+    <string name="bike">Bike</string>
+    <string name="insurance">Insurance</string>
+    <string name="more">More</string>
+    <string name="keep_discovering">Keep discovering</string>
+    <string name="momen_gajian_tiba">Momen gajian tiba</string>
+    <string name="sponsored_by_tokopedia">Sponsored by tokopedia</string>
+    <string name="kejar_diskon_wib_di_tokopedia_dengan_potongan_harga">Kejar diskon WIB di Tokopedia dengan potongan harga...</string>
+</resources>
